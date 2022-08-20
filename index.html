@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anandakrishnan.H</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89a1cc97be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#art">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end web Developer</p>
+                <h1>Hi, I'm <span> Anandakrishnan.H </span></h1>
+            </div>
+        </div>
+    </div>
+  <!-----------about ----------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1> 
+                    <p>Hi their, welcome to my website. This is my first static website that i created for me. Over the past few month's i have developed a better understanding in the field of Front-end web developing (Static website making). I didn't have any professional education for learning this programing skills. Anyway i taught my self these skills through researching. And iam ready to excel in this field. I believe that in this fast growing world every professionals and job seekers need their own website to showcase their skills and service. And i can help you with that. Let me make a perfect website for you. Lets go guy's its time to find your place in the world wide web. Shoot me in the contact section and let's begin.</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-address-card"></i>
+                    <h2>Portfolio website</h2>
+                    <p>Portfolio website allows you to showcase your work and provide proof about your abilities. This is a must if you are in one of the creative fields such as writing, designing, art, music, etc. While you can list out your skills on your resume, having a portfolio lets people see exactly what you did.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Brochure website</h2>
+                    <p>A brochure website is an eye-catching and cost-effective solution you can use to promote your business or company’s services. A well-designed brochure website can be a potentially brilliant tool you can use to promote your business online by showcasing your offerings using captivating images and effective words.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-images"></i>
+                    <h2>Gallery website</h2>
+                    <p>An online gallery is a simple concept. It is a website where you can upload your digital photos to be stored, organized, and shared with others.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h2>Nonprofit website</h2>
+                    <p>Nonprofit website informs the visitors, about your organization’s mission, goals and core values.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+     <!-------------arts------------->
+    <div id="art">
+        <div class="container">
+            <h1 class="sub-title">My clicks</h1>
+            <div class="work-list ">
+                <div class="work">
+                    <img src="images/treehouse-steps.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/tea-leaf.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/flower-tree.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/turn.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/rock-sunset.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/tree.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/sea.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/eco-point.jpg">
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+     <!-------------contact------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>anandak19h@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+919544928736</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sree333ak"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/anan_thak/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anandha-krishnan-h-14505a216/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div> 
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Anandakrishnan H.</p>
+        </div>
+     </div>
+     <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-170px"
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-170px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKySksuW6OqeuimKAaZLvXY8w-QkL90cuTnwF5XyP5sOeGO41SV_VmkWj8itBH6Iy3dA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
