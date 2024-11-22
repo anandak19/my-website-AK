@@ -195,7 +195,7 @@ nav ul li a:hover::after {
   margin-top: 20px;
   cursor: pointer;
 }
-.contact-right form {
+.contact-right .my-form {
   width: 100%;
 }
 .my-form input,
